@@ -1,0 +1,11 @@
+/* TEAM */
+Developer & UI Engineer: Omobolaji Durojaiye (Bolaji)
+Site: https://bolaji.tech
+LinkedIn: https://www.linkedin.com/in/omobolaji-durojaiye-527872294/
+Location: Abuja, Nigeria
+
+/* SITE */
+Client: Zee Plumbing World Nig Ltd
+Standards: HTML5, CSS3, WCAG 2.2 AA
+Components: Next.js App Router, React 19, TypeScript, Tailwind CSS v4, Radix UI, Embla Carousel
+Software: Visual Studio Code, Antigravity
