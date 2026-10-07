@@ -232,7 +232,7 @@ export const areas: Area[] = [
     state: "FCT",
     intro:
       "Along the bustling Airport Road corridor and across Federal Housing and Voice of Nigeria axes, Zee Plumbing World provides licensed plumbing installations, borehole pumping systems, whole-house water treatment, and emergency pipe repair for expanding residential communities.",
-    landmarks: ["Lugbe Federal Housing", "VoN Interchange", "Trademore Estate axis", "River Park Estate"],
+    landmarks: ["Havilah Plaza, FHA Lugbe (Zee Plumbing World HQ)", "Lugbe Federal Housing", "VoN Interchange", "Trademore Estate axis", "River Park Estate"],
     nearby: ["Airport Road", "Lokogoma", "Galadimawa", "Kuje"],
     geo: { lat: 8.9712, lng: 7.3712 },
   },

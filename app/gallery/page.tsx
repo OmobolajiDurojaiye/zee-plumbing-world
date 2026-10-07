@@ -15,34 +15,34 @@ export const metadata = buildMetadata({
 export default function GalleryPage() {
   const galleryItems = [
     {
-      title: "Wall-Hung Concealed Toilet & Vanity Installation",
-      category: "Bathroom Upgrade",
-      image: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=800&auto=format&fit=crop",
+      title: "Precision Piping & Domestic Water Infrastructure",
+      category: "Site Installation",
+      image: "/images/jobs/1.jpeg",
     },
     {
-      title: "Precision Copper & PPR Manifold Repiping",
+      title: "Sanitary Pipework & Modern Drainage Fittings",
+      category: "Drainage & Sanitary",
+      image: "/images/jobs/2.jpeg",
+    },
+    {
+      title: "Concealed Wall Plumbing & PPR Manifold Alignment",
       category: "Pipe Installation",
-      image: "https://images.unsplash.com/photo-1542013936693-884638332954?q=80&w=800&auto=format&fit=crop",
+      image: "/images/jobs/3.jpeg",
     },
     {
-      title: "Overhead Storage Tank & Booster Pump Connection",
+      title: "Overhead Distribution & Structural Pipe Routing",
       category: "Water Supply",
-      image: "https://images.unsplash.com/photo-1607472586893-edb57bdc0e39?q=80&w=800&auto=format&fit=crop",
+      image: "/images/jobs/4.jpeg",
     },
     {
-      title: "Luxury Rainfall Shower & Channel Drain Fitting",
-      category: "Bathroom Upgrade",
-      image: "https://images.unsplash.com/photo-1505798577917-a65157d3320a?q=80&w=800&auto=format&fit=crop",
+      title: "Completed High-Spec Residential Plumbing Work",
+      category: "Completed Project",
+      image: "/images/jobs/5.jpeg",
     },
     {
-      title: "Acoustic Leak Detection & Repair in Maitama Residence",
-      category: "Leak Repair",
-      image: "https://images.unsplash.com/photo-1581578731548-c64695cc6952?q=80&w=800&auto=format&fit=crop",
-    },
-    {
-      title: "Multi-Stage Borehole Filtration System Setup",
-      category: "Water Treatment",
-      image: "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?q=80&w=800&auto=format&fit=crop",
+      title: "Pressure Testing & Final Quality Certification",
+      category: "Quality Assurance",
+      image: "/images/jobs/1.jpeg",
     },
   ];
 
@@ -58,7 +58,7 @@ export default function GalleryPage() {
             Our Work in Real Nigerian Homes
           </h1>
           <p className="text-muted text-sm sm:text-base max-w-xl mx-auto leading-relaxed">
-            See the standard of plumbing execution delivered by our technicians: clean alignments, durable pressure fittings, and flawless bathroom finishes.
+            See the standard of plumbing execution delivered by our technicians: clean alignments, durable pressure fittings, and flawless bathroom finishes across Abuja.
           </p>
         </div>
 
@@ -69,23 +69,23 @@ export default function GalleryPage() {
               Interactive Comparison
             </span>
             <h2 className="text-2xl sm:text-3xl font-semibold text-text tracking-tight mt-1">
-              Before & After Transformations
+              Real Project Stages & Transformations
             </h2>
             <p className="text-muted text-xs sm:text-sm mt-1">
-              Drag the slider to compare corroded piping vs. newly heat-fused PPR manifolds.
+              Drag the slider to compare initial conduit routing vs. finished sanitary installations.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <BeforeAfter
-              title="Corroded Galvanized Lines vs. Heat-Fused PPR Piping"
-              beforeImage="https://images.unsplash.com/photo-1542013936693-884638332954?q=80&w=800&auto=format&fit=crop"
-              afterImage="https://images.unsplash.com/photo-1581578731548-c64695cc6952?q=80&w=800&auto=format&fit=crop"
+              title="Conduit Pipe Routing vs. Sanitary Drainage Alignment"
+              beforeImage="/images/jobs/1.jpeg"
+              afterImage="/images/jobs/2.jpeg"
             />
             <BeforeAfter
-              title="Old Leaking Trap vs. Modern Sanitary Vanity Installation"
-              beforeImage="https://images.unsplash.com/photo-1505798577917-a65157d3320a?q=80&w=800&auto=format&fit=crop"
-              afterImage="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=800&auto=format&fit=crop"
+              title="Rough-In Infrastructure vs. Distribution Piping"
+              beforeImage="/images/jobs/3.jpeg"
+              afterImage="/images/jobs/4.jpeg"
             />
           </div>
         </div>

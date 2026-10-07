@@ -108,24 +108,24 @@ export function Navbar() {
             href="/"
             className="flex items-center gap-2.5 group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue rounded-lg"
           >
-            <div className="relative w-9 h-9 sm:w-10 sm:h-10 rounded-full overflow-hidden shrink-0 border border-navy/10 group-hover:scale-105 transition-transform">
+            <div className="relative w-10 h-10 sm:w-11 sm:h-11 rounded-full shrink-0 group-hover:scale-105 transition-transform drop-shadow-xs">
               <Image
                 src="/brand/logo-badge.png"
                 alt="Zee Plumbing World Logo"
                 fill
-                sizes="40px"
+                sizes="44px"
                 className="object-contain"
                 priority
               />
             </div>
             <div className="flex flex-col">
-              <span className="font-bold text-base sm:text-lg tracking-tight text-ink leading-tight flex items-center gap-1">
-                <span className="text-orange font-black">Z</span>EE
-                <span className="text-xs font-semibold text-blue bg-blue/10 px-1.5 py-0.5 rounded-full uppercase tracking-wider ml-1">
+              <span className="font-extrabold text-base sm:text-lg tracking-tight text-[#143D66] leading-none flex items-center gap-1.5">
+                <span className="text-[#C59B4E] tracking-tight">ZEE</span>
+                <span className="text-[10px] font-bold text-[#E5C158] bg-[#143D66] px-1.5 py-0.5 rounded-full uppercase tracking-wider shadow-2xs">
                   NIG LTD
                 </span>
               </span>
-              <span className="text-[10px] tracking-wider uppercase font-semibold text-muted">
+              <span className="text-[10px] tracking-widest uppercase font-bold text-[#143D66]/80 mt-1">
                 Plumbing World
               </span>
             </div>

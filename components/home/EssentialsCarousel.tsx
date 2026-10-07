@@ -21,14 +21,14 @@ const frameColors = [
   "bg-[#3D6942]", // Forest green
 ];
 
-// High quality photography placeholders for the framed carousel cards
+// Verified photography from Zee Plumbing World site works
 const carouselPhotos = [
-  "https://images.unsplash.com/photo-1581578731548-c64695cc6952?q=80&w=600&auto=format&fit=crop",
-  "https://images.unsplash.com/photo-1505798577917-a65157d3320a?q=80&w=600&auto=format&fit=crop",
-  "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?q=80&w=600&auto=format&fit=crop",
-  "https://images.unsplash.com/photo-1542013936693-884638332954?q=80&w=600&auto=format&fit=crop",
-  "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=600&auto=format&fit=crop",
-  "https://images.unsplash.com/photo-1607472586893-edb57bdc0e39?q=80&w=600&auto=format&fit=crop",
+  "/images/jobs/1.jpeg",
+  "/images/jobs/2.jpeg",
+  "/images/jobs/3.jpeg",
+  "/images/jobs/4.jpeg",
+  "/images/jobs/5.jpeg",
+  "/images/jobs/1.jpeg",
 ];
 
 export function EssentialsCarousel() {

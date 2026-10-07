@@ -33,7 +33,7 @@ export function Footer() {
           {/* Col 1: Brand Info */}
           <div className="lg:col-span-2 space-y-4">
             <Link href="/" className="inline-flex items-center gap-3">
-              <div className="relative w-12 h-12 rounded-full overflow-hidden bg-white/10 p-1 border border-white/15">
+              <div className="relative w-12 h-12 rounded-full overflow-hidden shrink-0 drop-shadow-md">
                 <Image
                   src="/brand/logo-badge.png"
                   alt="Zee Plumbing World Badge"
@@ -43,11 +43,14 @@ export function Footer() {
                 />
               </div>
               <div className="flex flex-col">
-                <span className="font-bold text-lg text-white leading-tight">
-                  <span className="text-orange">Z</span>EE PLUMBING WORLD
+                <span className="font-extrabold text-lg text-white leading-tight flex items-center gap-1.5">
+                  <span className="text-[#E5C158]">ZEE</span> PLUMBING WORLD
+                  <span className="text-[10px] text-[#E5C158] bg-[#143D66] px-1.5 py-0.5 rounded-full font-bold tracking-wider border border-[#E5C158]/30">
+                    NIG LTD
+                  </span>
                 </span>
                 <span className="text-xs text-sky font-semibold tracking-wider">
-                  NIG LTD
+                  Professional Plumbers
                 </span>
               </div>
             </Link>
