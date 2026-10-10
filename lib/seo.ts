@@ -14,7 +14,7 @@ export function buildMetadata({
   title,
   description,
   path = "",
-  image = "/brand/logo-badge.png",
+  image = "/brand/opengraph-image.png",
 }: MetadataOptions): Metadata {
   const url = `${SITE_URL}${path.startsWith("/") ? path : `/${path}`}`;
   const fullTitle = `${title} | Zee Plumbing World`;

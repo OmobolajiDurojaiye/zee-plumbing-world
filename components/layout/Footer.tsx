@@ -44,12 +44,12 @@ export function Footer() {
               </div>
               <div className="flex flex-col">
                 <span className="font-extrabold text-lg text-white leading-tight flex items-center gap-1.5">
-                  <span className="text-[#E5C158]">ZEE</span> PLUMBING WORLD
-                  <span className="text-[10px] text-[#E5C158] bg-[#143D66] px-1.5 py-0.5 rounded-full font-bold tracking-wider border border-[#E5C158]/30">
+                  <span className="text-white">ZEE</span> PLUMBING WORLD
+                  <span className="text-[10px] text-white bg-[#056960] px-1.5 py-0.5 rounded-full font-bold tracking-wider border border-white/20">
                     NIG LTD
                   </span>
                 </span>
-                <span className="text-xs text-sky font-semibold tracking-wider">
+                <span className="text-xs text-[#26C6B4] font-semibold tracking-wider">
                   Professional Plumbers
                 </span>
               </div>

@@ -119,13 +119,13 @@ export function Navbar() {
               />
             </div>
             <div className="flex flex-col">
-              <span className="font-extrabold text-base sm:text-lg tracking-tight text-[#143D66] leading-none flex items-center gap-1.5">
-                <span className="text-[#C59B4E] tracking-tight">ZEE</span>
-                <span className="text-[10px] font-bold text-[#E5C158] bg-[#143D66] px-1.5 py-0.5 rounded-full uppercase tracking-wider shadow-2xs">
+              <span className="font-extrabold text-base sm:text-lg tracking-tight text-[#060CA0] leading-none flex items-center gap-1.5">
+                <span className="text-[#060CA0] tracking-tight">ZEE</span>
+                <span className="text-[10px] font-bold text-white bg-[#056960] px-1.5 py-0.5 rounded-full uppercase tracking-wider shadow-2xs">
                   NIG LTD
                 </span>
               </span>
-              <span className="text-[10px] tracking-widest uppercase font-bold text-[#143D66]/80 mt-1">
+              <span className="text-[10px] tracking-widest uppercase font-bold text-[#056960] mt-1">
                 Plumbing World
               </span>
             </div>

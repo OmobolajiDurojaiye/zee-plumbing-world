@@ -1,124 +1,43 @@
 import React from "react";
-import Image from "next/image";
 import { Container } from "@/components/ui/Container";
-import { BeforeAfter } from "@/components/ui/BeforeAfter";
+import { Ring } from "@/components/ui/decor/DecorKit";
+import { GalleryGrid } from "@/components/gallery/GalleryGrid";
 import { CtaBand } from "@/components/home/CtaBand";
 import { buildMetadata } from "@/lib/seo";
 
 export const metadata = buildMetadata({
-  title: "Project Gallery | Zee Plumbing World",
+  title: "Completed Projects & Construction Plumbing Gallery | Zee Plumbing World",
   description:
-    "Explore before and after transformations, luxury bathroom installations, PPR water manifolds, and commercial piping projects across Abuja.",
+    "Explore certified civil construction plumbing, rough-in drainage, high-pressure PPR manifolds, and completed luxury bathroom installations across Abuja, Nigeria.",
   path: "/gallery",
+  image: "/brand/opengraph-image.png",
 });
 
 export default function GalleryPage() {
-  const galleryItems = [
-    {
-      title: "Precision Piping & Domestic Water Infrastructure",
-      category: "Site Installation",
-      image: "/images/jobs/1.jpeg",
-    },
-    {
-      title: "Sanitary Pipework & Modern Drainage Fittings",
-      category: "Drainage & Sanitary",
-      image: "/images/jobs/2.jpeg",
-    },
-    {
-      title: "Concealed Wall Plumbing & PPR Manifold Alignment",
-      category: "Pipe Installation",
-      image: "/images/jobs/3.jpeg",
-    },
-    {
-      title: "Overhead Distribution & Structural Pipe Routing",
-      category: "Water Supply",
-      image: "/images/jobs/4.jpeg",
-    },
-    {
-      title: "Completed High-Spec Residential Plumbing Work",
-      category: "Completed Project",
-      image: "/images/jobs/5.jpeg",
-    },
-    {
-      title: "Pressure Testing & Final Quality Certification",
-      category: "Quality Assurance",
-      image: "/images/jobs/1.jpeg",
-    },
-  ];
-
   return (
     <div className="py-8 sm:py-12">
       <Container size="default">
         {/* Page Hero */}
-        <div className="bg-mist rounded-[28px] sm:rounded-[36px] p-8 sm:p-14 text-center max-w-4xl mx-auto mb-14 border border-black/5">
-          <span className="text-xs uppercase tracking-wider font-semibold text-blue mb-2 block">
-            Craftsmanship Portfolio
-          </span>
-          <h1 className="text-3xl sm:text-5xl font-semibold text-text tracking-tight mb-4">
-            Our Work in Real Nigerian Homes
-          </h1>
-          <p className="text-muted text-sm sm:text-base max-w-xl mx-auto leading-relaxed">
-            See the standard of plumbing execution delivered by our technicians: clean alignments, durable pressure fittings, and flawless bathroom finishes across Abuja.
-          </p>
-        </div>
+        <div className="relative bg-mist rounded-[28px] sm:rounded-[36px] p-8 sm:p-14 text-center max-w-4xl mx-auto mb-12 sm:mb-16 border border-black/5 overflow-hidden">
+          <Ring className="absolute -top-14 -right-14 text-[#056960]" size={240} opacity={0.15} />
+          <Ring className="absolute -bottom-14 -left-14 text-blue" size={200} opacity={0.1} />
 
-        {/* Before & After Interactive Showcase */}
-        <div className="mb-16">
-          <div className="max-w-xl mb-6">
-            <span className="text-xs uppercase tracking-wider font-semibold text-muted">
-              Interactive Comparison
+          <div className="relative z-10">
+            <span className="text-xs uppercase tracking-wider font-semibold text-[#056960] mb-2 block">
+              Certified Engineering Portfolio
             </span>
-            <h2 className="text-2xl sm:text-3xl font-semibold text-text tracking-tight mt-1">
-              Real Project Stages & Transformations
-            </h2>
-            <p className="text-muted text-xs sm:text-sm mt-1">
-              Drag the slider to compare initial conduit routing vs. finished sanitary installations.
+            <h1 className="text-3xl sm:text-5xl font-semibold text-text tracking-tight mb-4">
+              Real Site Execution & Completed Works
+            </h1>
+            <p className="text-muted text-sm sm:text-base max-w-2xl mx-auto leading-relaxed">
+              Explore our verified construction rough-in drainage, electro-fused PPR distribution manifolds, and luxury residential sanitary installations executed across Abuja by Zee Plumbing World Nig Ltd.
             </p>
           </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <BeforeAfter
-              title="Conduit Pipe Routing vs. Sanitary Drainage Alignment"
-              beforeImage="/images/jobs/1.jpeg"
-              afterImage="/images/jobs/2.jpeg"
-            />
-            <BeforeAfter
-              title="Rough-In Infrastructure vs. Distribution Piping"
-              beforeImage="/images/jobs/3.jpeg"
-              afterImage="/images/jobs/4.jpeg"
-            />
-          </div>
         </div>
 
-        {/* Masonry / Grid of Projects */}
+        {/* Gallery Grid with Interactive Category Tabs */}
         <div className="mb-16">
-          <h3 className="text-2xl font-semibold text-text mb-6">Recent Project Installations</h3>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {galleryItems.map((item, idx) => (
-              <div
-                key={idx}
-                className="group bg-mist rounded-[24px] overflow-hidden border border-black/5 flex flex-col justify-between"
-              >
-                <div className="relative aspect-[4/3] w-full overflow-hidden">
-                  <Image
-                    src={item.image}
-                    alt={item.title}
-                    fill
-                    sizes="(max-width: 768px) 100vw, 33vw"
-                    className="object-cover transition-transform duration-500 group-hover:scale-105"
-                  />
-                  <div className="absolute top-3 left-3 bg-white/90 backdrop-blur-xs text-text text-[11px] font-semibold px-2.5 py-1 rounded-full">
-                    {item.category}
-                  </div>
-                </div>
-                <div className="p-5">
-                  <h4 className="font-semibold text-base text-text leading-snug">
-                    {item.title}
-                  </h4>
-                </div>
-              </div>
-            ))}
-          </div>
+          <GalleryGrid />
         </div>
 
         <CtaBand />
