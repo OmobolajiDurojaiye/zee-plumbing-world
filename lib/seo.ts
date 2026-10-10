@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 import { business, contact, areas, social } from "@/content";
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://zeeplumbingworld.com";
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://zee-plumbing-world.com";
 
 interface MetadataOptions {
   title: string;
